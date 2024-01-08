@@ -1,0 +1,1 @@
+The main idea is to have a working foundation with examples
