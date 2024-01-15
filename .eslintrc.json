@@ -17,11 +17,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "ignorePatterns": [
-    "playwright-report/*",
-    "node_modules/*",
-    "doc/*"
-  ],
+  "ignorePatterns": ["playwright-report/*", "node_modules/*", "doc/*"],
   "overrides": [
     {
       "files": ["*.ts"],
@@ -44,6 +40,7 @@
             "default": "generic"
           }
         ],
+        "import/no-unresolved": [0, { "caseSensitive": false }],
         "quotes": [
           "error",
           "single",
