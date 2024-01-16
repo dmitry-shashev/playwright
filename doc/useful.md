@@ -176,3 +176,16 @@ Later we may want to stop them
 expect(test.info().errors).toHaveLength(0);
 ```
 
+#### Add cookies
+
+```typescript
+const domain = new URL(config.use?.baseURL ?? '').host
+page.context().addCookies([
+    {
+        domain,
+        path: '/',
+        name: 'some-name',
+        value: 'some-value'
+    }
+])
+```
